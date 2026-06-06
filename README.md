@@ -12,6 +12,11 @@ Images are flattened into feature vectors, normalized, and scaled before being f
 Install dependencies: pip install -r requirements.txt
 
 Download CIFAKE from Kaggle and place the train/ and test/ folders in the project root, then run: python classify.py
+Link: https://www.kaggle.com/datasets/birdy654/cifake-real-and-ai-generated-synthetic-images/data
+Code:
+import kagglehub
+path = kagglehub.dataset_download("birdy654/cifake-real-and-ai-generated-synthetic-images")
+print("Path to dataset files:", path)
 
 To predict a single image, uncomment and call predict_image("your_image.jpg") at the bottom of classify.py.
 
